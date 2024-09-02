@@ -1,0 +1,17 @@
+{
+  "name": "quotidian-quotables-bsky-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@atproto/api": "^0.6.20",
+    "dotenv": "^16.3.1",
+    "process": "^0.11.10"
+  }
+}
