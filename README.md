@@ -72,7 +72,7 @@ jobs:
 
 ## Quotes
 
-The quotes are stored in a private gist file this with +2000 entries:
+The quotes are stored in a private gist file with +2000 entries:
 
 ```json
 [
