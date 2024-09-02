@@ -1,6 +1,6 @@
 # 🦋🤖 Quotidian Quotables Bsky Bot
 
-Inspiring quotes every 2 hours posted at [https://bsky.app/profile/quotidianquotables.bsky.social](https://bsky.app/profile/quotidianquotables.bsky.social)
+Inspiring quotes every 4 hours posted at [https://bsky.app/profile/quotidianquotables.bsky.social](https://bsky.app/profile/quotidianquotables.bsky.social)
 
 ## Javascript
 ```js
