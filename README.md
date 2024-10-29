@@ -4,7 +4,7 @@ Inspiring quotes every 4 hours posted on [https://bsky.app/profile/quotidianquot
 
 ## Javascript
 ```js
-import pkg from '@atproto/api';
+import pkg from '@atproto/api'
 import dotenv from 'dotenv'
 import process from 'process'
 const { BskyAgent } = pkg
