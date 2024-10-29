@@ -7,7 +7,7 @@ Inspiring quotes every 4 hours posted on [https://bsky.app/profile/quotidianquot
 import pkg from '@atproto/api';
 import dotenv from 'dotenv'
 import process from 'process'
-const { BskyAgent } = pkg;
+const { BskyAgent } = pkg
 dotenv.config()
 
 const agent = new BskyAgent({
