@@ -1,9 +1,9 @@
 name: Create Post
 
 on:
-  # Triggers the workflow every 4 hours
+  # Triggers the workflow every 6 hours
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
