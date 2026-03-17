@@ -3,35 +3,37 @@
 Inspiring quotes every 4 hours posted on [https://bsky.app/profile/quotidianquotables.bsky.social](https://bsky.app/profile/quotidianquotables.bsky.social)
 
 ## Javascript
+
 ```js
-import pkg from '@atproto/api'
-import dotenv from 'dotenv'
-import process from 'process'
-const { BskyAgent } = pkg
-dotenv.config()
+import pkg from "@atproto/api";
+import dotenv from "dotenv";
+import process from "process";
+const { BskyAgent } = pkg;
+dotenv.config();
 
 const agent = new BskyAgent({
-  service: 'https://bsky.social'
-})
+  service: "https://bsky.social",
+});
 
 await agent.login({
   identifier: process.env.BLUESKY_USERNAME,
-  password: process.env.BLUESKY_PASSWORD
-})
+  password: process.env.BLUESKY_PASSWORD,
+});
 
-const data = await fetch(process.env.URL)
-const quotes = await data.json()
-const randomIndex = Math.floor(Math.random() * quotes.length)
-const { content, author } = quotes[randomIndex]
+const data = await fetch(process.env.URL);
+const quotes = await data.json();
+const randomIndex = Math.floor(Math.random() * quotes.length);
+const { content, author } = quotes[randomIndex];
 
 await agent.post({
   text: `💬 ${content}
 
-📖 — ${author} ✍️`
-})
+📖 — ${author} ✍️`,
+});
 ```
 
-## Workflow 
+## Workflow
+
 Cron Job configured with Github Actions
 
 ```yml
@@ -49,12 +51,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4 
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4 
+        uses: actions/setup-node@v4
         with:
-          node-version: '20' 
+          node-version: "20"
 
       - name: Install dependencies
         run: npm install
