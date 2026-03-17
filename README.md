@@ -1,6 +1,6 @@
 # 🦋🤖 Quotidian Quotables Bsky Bot
 
-Inspiring quotes every 4 hours posted on [https://bsky.app/profile/quotidianquotables.bsky.social](https://bsky.app/profile/quotidianquotables.bsky.social)
+Inspiring quotes every 6 hours posted on [https://bsky.app/profile/quotidianquotables.bsky.social](https://bsky.app/profile/quotidianquotables.bsky.social)
 
 ## Javascript
 
@@ -40,9 +40,9 @@ Cron Job configured with Github Actions
 name: Create Post
 
 on:
-  # Triggers the workflow every 4 hours
+  # Triggers the workflow every 6 hours
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -56,7 +56,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
 
       - name: Install dependencies
         run: npm install
